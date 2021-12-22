@@ -1,0 +1,62 @@
+.container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "header header header"
+        "side main main"
+        "side main main";
+    place-content: center;
+}
+
+
+.item  {
+    font-size: 4rem;
+}
+
+/* 
+/* aqui se alineará el header ente la linea 1 y la linea 4  cn los grid column strt y end*/
+/* .item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+} */
+
+/* sera la sidebar desde la linea 2 a la 4 con grid row*/
+/* .item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-row: 2 / 4; 
+}
+
+/* usar grid-area: iniciofila /iniciocol /finfila / fincol; para el contenido principal  */
+/* .item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: 2 / 2 / 4 / 4; 
+}
+/* AHORA USANDO GIRD AREA SOLAMENTE  se define en container las areas con nombre y aqui se asignan
+es un template de areas*/
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    grid-area: header;
+
+}
+
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    grid-area: side;
+}
+
+
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    grid-area: main;
+}
